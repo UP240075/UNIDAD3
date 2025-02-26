@@ -56,6 +56,14 @@ if (FirstSlope == Second_Slope):
 else: print("It is not the same, YOU ARE WRONG!")
 
 #EJERCICIO 11
+print("Evaluando la función y = x^2 + 6x + 9")
+for x in range(-10, 11):  # Prueba con valores de x entre -10 y 10
+    y = x**2 + 6*x + 9
+    print(f"x = {x} -> y = {y}")
+    if y == 0:
+        print(f"Encontrado: y es 0 cuando x = {x}")
+
+
 
 #EJERCICIO 12
 word1 = len("Python")
@@ -89,9 +97,8 @@ else: print("The number is not divisible for 2")
 #EJERCICIO 18
 floorDivision = 7 / 3
 if floorDivision == int(2.7):
-    print("It is not equal   ",floorDivision)
-else: print("It is equal   ", floorDivision )
-
+    print("It is not equal   ")
+else: print("It is equal   ")
 
 #EJERCICIO 19
 # Definir valores
@@ -101,3 +108,31 @@ b = 10    # Entero
 result = type(a) == type(b)
 # Mostrar resultado
 print("¿El tipo de '10' es igual al tipo de 10?:", result)
+
+#EJERCICIO 20
+if "9.8" == 10:
+    print(True)
+else: False
+
+#EJERCICIO 21
+hours = float(input("¿Cuántas horas trabajas?"))
+perHour = float(input("¿Cuánto te pagan por hora?"))
+weeklyEarning = hours * perHour
+print("Tu salario es de $  ", weeklyEarning)
+
+#EJERCICIO 22
+while True:
+    try:
+        yearsLived = int(input("¿Cuántos años tienes? (entre 0 y 100): "))
+        if 0 <= yearsLived <= 100:
+            break
+        else:
+            print("Ingresa un número entre 0 y 100.")
+    except ValueError:
+        print("Error: Ingresa un número entero.")
+secondsInYourLife = yearsLived * 3153600000 
+print("Has vivido por", secondsInYourLife, "segundos")
+
+#EJERCICIO 23
+for i in range(1, 6):
+    print(i, 1, i, i**2, i**3)
